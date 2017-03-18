@@ -11,11 +11,11 @@ module PuppetSyntax
     end
 
     def filelist_manifests
-      filelist(["manifests/*.pp", "manifests/**/*.pp", "manifests/**/**/*.pp"])
+      filelist(["**/*.pp", "**/**/*.pp", "**/**/**/*.pp"])
     end
 
     def filelist_templates
-      filelist(["/templates/**/*.erb", "/templates/**/*.epp"])
+      filelist(["**/templates/**/*.erb", "**/templates/**/*.epp"])
     end
 
     def filelist_hiera_yaml
