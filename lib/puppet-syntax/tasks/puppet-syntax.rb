@@ -11,7 +11,7 @@ module PuppetSyntax
     end
 
     def filelist_manifests
-      filelist(["**/*.pp", "**/**/*.pp", "**/**/**/*.pp"])
+      filelist("manifests/**/**/*.pp")
     end
 
     def filelist_templates
